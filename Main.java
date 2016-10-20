@@ -11,7 +11,9 @@ public class Main
 	
 	public static void main(String[] args) throws Exception
 	{			
-		//setMode(LED_PIN, "out");
+		// Setting the mode seems to mess up the read command
+		// 	as per below command
+		//GPIOUtil.setMode(LED_PIN, "out");
 			
 		int temp =  GPIOUtil.in(LED_PIN);
 	
